@@ -4,36 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+        table,th,td{ 
+            border: 2px solid white;
+            border-collapse: collapse;
+            text-transform: capitalize;
+            padding: 5px;
+            margin-left: 150px;
+            margin: 10px 10px 10px 150px;
+        }
+           
+    </style>
 </head>
 <body>
     <header>
         
             <p>EXPRESS MOVING COMPANY</p>
             <nav>
-                <ul>
-                   
+                <ul> 
                   <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                      <li><a href="#work">Work</a></li>
-                      <li><a href="#resume">Resume</a></li>
+                    <li><a href="#resume">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
        
     </header>
     <main>
-        <section id="home">
-            <p><h1>Need moving services?<br>
+        <section id="home"> 
+            <h1>Home</h1>
+            <h2>Need moving services?<br>
                 We're here to help! <br>
-                Get up to 4 free quotes from top quality movers</h1></p>
+                Get up to 4 free quotes from top quality movers</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th >property size</th>
+                            <th>average weight</th>
+                            <th>number of hours</th>
+                            <th>estimated cost</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>moving a one bedroom home</td>
+                            <td>3.500 pounds</td>
+                            <td>3-5 hours</td>
+                            <td>200dt-500dt</td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td>moving two bedrooms home</td> 
+                            <td>5000 pounds</td>
+                            <td>5-7 hours</td>
+                            <td>200dt-500dt</td>
+                        </tr>
+                        <tr>
+                            <td>moving three bedrooms home</td>
+                            <td>10000 pounds</td>
+                            <td>7-10 hours</td>
+                            <td>200dt-500dt</td>
+
+                        </tr>
+                        <tr>
+                            <td>moving four bedrooms home</td>
+                            <td>12000+ pounds</td>
+                            <td>above 10 hours</td>
+                            <td>200dt-500dt</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                </table>
         </section>
         <SEction id="About">
             <h1>about</h1>
             
             <p>EXPRESS MOVING COMPANY is a company based in Tunisia, specializing in private and corporate removals.
-                You can calculate your volume to be moved online in a few seconds with the volume calculator and then contact us to send you a detailed quote. We offer you the best service at the best price
-                <iframe width="956" height="538" src="https://www.youtube.com/embed/2DcE0CoN4B4" title="Moving Express Bucuresti" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                You can calculate your volume to be moved online in a few seconds with the volume calculator and then contact us to send you a detailed quote. We offer you the best service at the best price </p>
+                <iframe width="700" height="500" src="https://www.youtube.com/embed/2DcE0CoN4B4" title="Moving Express Bucuresti" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </SEction>
         <section id="work">
             <h1>Work</h1>
@@ -63,24 +118,28 @@
         <section id="contact">
             <h1>contact US</h1>
             <form action="">
+                <div>
                 <label for="user">Username</label>
-                <input type="text" placeholder="enter your username" id="user">
+                <input type="text" placeholder="enter your username" id="user"></div>
+                <div>
                 <label for="mail">E-mail</label>
-                <input type="email" placeholder="enter your e-mail" id="mail">
-                <label for="sex">Gender</label>
-                <select  id="sex" >
+                <input type="email" placeholder="enter your e-mail" id="mail"></div>
+                <div><label for="sex">Gender</label>
+            
+                                <select  id="sex" >
                     <option>Male</option>
                     <option>Female</option>
                                                
-                  </select>
+                  </select></div>
+                  <div>
                   <h4>Are you +18 ? </h4>
                   <input type="radio" value="+18" id="Yes" name="major" checked>
                   <label for="yes"> yes</label>
                   <input type="RADIO" value="+18" id="YES" name="major" >
-                  <label for="YES"> NO</label>
+                  <label for="YES"> NO</label></div>
                 <fieldset>
                     <legend>Message</legend>
-                      <textarea name="" id="" cols="40" rows="7">
+                      <textarea name="" id="" cols="70" rows="7" >
                       </textarea>
                    </fieldset>
             </form>
