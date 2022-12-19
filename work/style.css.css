@@ -1,0 +1,103 @@
+* ::before ::after{
+    padding: 0%;
+    margin: 0% ;
+    box-sizing: border-box;
+}
+header{
+    position: fixed ;
+top: 0;
+background-color: white;
+width: 100%;
+
+}
+.navbar{
+
+width: 100%;
+height: 50px;
+overflow: hidden;
+
+}
+
+img{
+  
+ 
+}
+img{
+    width: 100px;
+    height: 50px;
+    float: left;
+    margin-right: -20px;
+    transform: scale(2.2);
+}
+ul{
+    list-style: none;
+    float: right;
+    display: inline-flex;
+     margin-right:px;
+     
+}
+   
+  
+
+li a{text-align: center;
+ 
+    text-decoration: none;
+ 
+   color: black;
+   text-transform: uppercase;
+   font-size: 16px;
+   
+}
+li{
+   
+    font-size: larger;
+    
+    margin: 0 16px;
+    padding:  16px 12px;
+    line-height: 5px;
+    
+    }
+    li a:hover{
+        color:aquamarine;
+
+    }
+    .signup,.login{
+        padding: 13px 20px;
+        cursor: pointer;
+        border-radius: 20px ;
+        border-color: white ;
+        margin-top: -50px;
+        background-color: rgb(255, 196, 0);
+        line-height: 12px;
+        color: aliceblue;
+
+    }
+    .signup{
+        
+       
+       
+    }
+    .btn{
+        float:right;
+        margin-top: -15px;
+    }
+    .head{
+        width: 100%;
+        height: 30px;
+        background-color:rgb(55, 119, 104);
+       display: flex;
+       justify-content: space-between;
+        
+    }
+    span ,p{ display: flex;
+        justify-content: flex-start;
+        color: aliceblue;
+    }
+    i{
+        margin-left: 13px;
+        margin-top: 5px;
+        filter: grayscale(1);
+    }
+    i:hover{
+        filter:grayscale(100%)
+    }

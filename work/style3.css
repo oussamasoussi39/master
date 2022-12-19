@@ -1,0 +1,289 @@
+*{
+    margin: 3px 10px 3px 10px;
+    padding: 0px 15px 0px 15px;
+    font-family: 'Work Sans',Arial,sans-serif;
+}
+
+.logodoc{
+    display: flex;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    color: grey;
+    text-decoration: none;
+    justify-content:space-between;
+    width: 25%;
+    display: inline;
+    margin-right: 10px;
+}
+.active-link{
+    color: #5dc6b0;
+}
+
+.introduction{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.introduction-logo{
+    width: 50px;
+    height: 50px;
+}
+.introduction-title{
+    color: #00b39b;
+    font-weight: 150;
+    text-align: center;
+    font-family: Work Sans,Arial,sans-serif;
+    font-size: 2.125rem;
+
+}
+.introduction-text{
+    display: flex;
+    justify-content: space-between;
+
+}
+p{
+    text-align: justify;
+    padding: 20px;
+    font-size: 20px;
+    color: grey;
+}
+.patient{ font-weight: 200;
+    font-size:25px;
+    }
+.service-card-title{
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    font-weight: 400;
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+}
+.service-card{
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+    padding:22px 0px; 
+    width: 300px;
+    flex-direction: column;
+    font-weight: 400;
+    height: 345px;
+    position: relative;
+    transition: all .2s ease 0s;
+}
+.service-cardforpatient{
+
+    background-color: #5dc6b0;
+} 
+.service-cardfordoctors{
+    background-color: #4293db;
+}
+.service-cardforclinic{
+    background-color:#1b2734;
+    
+}
+.stats-container {
+    background-color: #bee1e6;
+    display: flex;
+    height: 380px;
+    padding: 4%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.introduction-box {
+    width: 30%;
+}
+.introduction-box h1 {
+    color: rgb(0,177,159);
+    font-family: 'Charmonman', cursive;
+    margin-bottom: 7%;
+}
+.introduction-box p {
+    opacity: 0.4;
+}
+.introduction-logo1 img {
+    height: 231px;
+    width: 100%;
+    margin-top: 5%;
+}
+.stats {
+    text-align: center;
+    width: 60%;
+    margin: 0 4% 0 19%;
+}
+.stats h1 {
+    color: rgb(0,197,155);
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+    .stats-box {
+        height: 190px;
+        background-color: white;
+        border-radius: 7%;
+        width: 45%;
+        margin-right: 5%;
+    }
+    .stats-box-colomn-2 {
+        display: flex;
+        margin-top:5%;
+    }
+    .stats-box-colomn-1 {
+        display: flex;
+    }
+    .box-1 p{
+        margin-right: 17%;
+        margin-top: -5%;
+        font-size: 12px;
+        font-weight: 100;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        letter-spacing: .1;
+
+        
+    }
+    .box-2 p{
+        margin-right: 17%;
+        margin-top: -5%;
+        font-size: 12px;
+        font-weight: 100;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        letter-spacing: .1;
+
+        
+
+
+    }
+    .box-3 p {
+        margin-right: 17%;
+        margin-top: -5%;
+        font-size: 12px;
+        font-weight: 100;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        letter-spacing: .1;
+
+    }
+    .box-4 p {
+        margin-right: 17%;
+        font-size: 12px;
+        font-weight: 100;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        letter-spacing: .1;
+    }
+    .offices-description {
+        text-align: center;
+    }
+    .offices-description h1 {
+        color: rgb(0,197,155);
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 12px;
+    }
+    .offices-description p {
+        text-align: center;
+        color: black;
+        opacity: .7;
+        font-size: 12;
+    }
+#countries {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1000px;
+    padding: 10px;
+    display: block;
+}
+.country {
+    display: inline-block;
+    flex-direction: column;
+    flex-wrap:wrap;
+    padding-right: 10px;
+    justify-content: space-around;
+    
+
+    
+}
+.country img {
+    width: 300px;
+    
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.header2{
+    color: #333;
+    text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 80px;
+
+}
+.header22{
+    font-weight: 300;
+    font-size: 500;
+    
+}
+
+.btn--small {
+    font-size: .800rem;
+    width: 90px;
+    height: 10px;
+    padding: 20px;
+    display: inline;
+    font-weight: 300;}
+   
+.btn{
+    display: inline;
+    vertical-align: middle;
+    position: relative;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    background: #3d83df;
+    font-family: Roboto,Arial,sans-serif;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    transition: all .2s ease 0s;
+}
+
+footer{
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+      }
+footer p{
+    margin-bottom:10px;
+    font-size: 12px;
+    color: #ababab;
+    text-align: center;
+}
