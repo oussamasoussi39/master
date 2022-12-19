@@ -1,0 +1,191 @@
+:root {
+  --white: #fff;
+  --black: #272524;
+  --red: #f44d4d;
+}
+@import url(//db.onlinewebfonts.com/c/83c87eaab9535ea533cabc2f921bf64a?family=AdiHaus);
+@font-face {
+  font-family: Helvetica65;
+  src: url("helvetica65.woff");
+}
+@import url(//db.onlinewebfonts.com/c/b82329475307e0380dc1ea23f0c35266?family=adineue+PRO);
+@import url(//db.onlinewebfonts.com/c/f9fbc5a4ff13d5639079818db7ffea2a?family=adineue+PRO+Bold+Web);
+* {
+  box-sizing: border-box;
+  font-family: "AdiHaus", Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background: var(--black);
+  width: 100%;
+}
+h1.header {
+  font-size: 1rem;
+  color: var(--white);
+  text-align: center;
+  padding: 5px;
+  font-family: "adineuePro";
+  text-transform: uppercase;
+  z-index: 200;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+.fa {
+  font-size: 3rem;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+.fa-cart-plus {
+  /* color: rgb(226, 226, 226); */
+  color: #ffffff;
+  background-color: #272524;
+  margin-right: 0;
+  padding: 5px;
+}
+#logo {
+  max-width: 200px;
+}
+h1.headline {
+  text-align: center;
+  margin: 10px;
+  text-transform: capitalize;
+}
+section img {
+  width: 200px;
+  min-height: 250px;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  background-color: grey;
+}
+#grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  gap: auto;
+  margin-top: 50px;
+}
+.title {
+  font-size: 1.4rem;
+  margin: 30px;
+  text-align: center;
+}
+section {
+  margin: 10px;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border: 2px solid #bfbfbf;
+}
+section:hover {
+  transition: 0.4s;
+  padding: 10px;
+  border: 1px solid var(--black);
+}
+.price {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 12px;
+  color: var(--red);
+  font-weight: bold;
+  font-size: x-large;
+}
+.fa-cart-plus {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* cart-box */
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 370px;
+  min-height: 100vh;
+  background-color: var(--white);
+  box-shadow: -2px 0 4px hsl(0, 2%, 94%);
+  z-index: 100;
+}
+.active{
+  right:-100% ;
+}
+.fa-times {
+  position: relative;
+  right: -300px;
+  margin: 12px;
+  padding: 10px;
+}
+.card-title {
+  text-align: center;
+}
+/* add product */
+.item-row {
+  margin: 20px 0;
+  align-items: center;
+  display: grid;
+  grid-template-areas: "column 1 column2 column3 ";
+}
+.item-row img{
+  width: 100px;
+  height: 150px;
+}
+.column1 {
+  grid-area: column1;
+}
+.column2 {
+  grid-area: column2;
+}
+.column3 {
+  grid-area: column3;
+  align-self: center;
+}
+.fa-trash {
+  font-size: 2rem;
+  color: var(--red);
+}
+.product-name,
+.product-price,
+spam {
+  font: small-caps bold 12px/30px Georgia, serif;
+}
+input[type="number"] {
+  width: 20%;
+  padding: 5px;
+  outline: none;
+}
+input[type="number"]:focus {
+  border: 1.2px solid #f44d4d;
+}
+#total {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1.2px solid #272524;
+  margin: 10px;
+  padding: 10px;
+}
+#total-title {
+  margin-right: 8px;
+}
+#buy {
+  width: 35%;
+  margin: 1.2rem auto 0 auto;
+  border: none;
+  background-color: var(--red);
+  padding: 20px 15px;
+  color: var(--white);
+  font: bold 1.3rem/30px arial, serif;
+  text-transform: capitalize;
+  display: block;
+  cursor: pointer;
+}
+#buy:hover {
+  background-color: var(--black);
+}
