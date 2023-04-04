@@ -1,0 +1,14 @@
+ALGORITHM algo2_solution2
+VAR
+    tab1 : HASH_TABLE<integer,integer>;
+    tab2 : HASH_TABLE<integer,integer>
+    sum,i : INTEGER;
+BEGIN
+    sum := 0;
+    FOR i FROM 0 TO tab1.length - 1  STEP 1  DO
+        IF(tab2.lookup(tab1[i])=true)THEN
+        sum = sum + tab1[i]*2;
+        END_IF
+    END_FOR
+    write(sum)
+END

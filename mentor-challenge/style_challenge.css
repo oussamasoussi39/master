@@ -1,0 +1,221 @@
+:root{
+   
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+
+/* ## Gradients */
+
+--Light-slate-blue-background: hsl(252, 100%, 67%);
+--background-Light-royal-blue: hsl(241, 81%, 54%);
+
+--Violet-blue-circle: hsla(256, 72%, 46%, 1);
+--Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+
+/* 
+### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%) ;
+}
+
+
+html{font-size:62.5% ;}
+@media only screen and (max-width:375px) {
+    html{font-size: 50%;}
+}
+
+* {
+   
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body{
+    height: 100vh;
+   
+    background-color:- hsla(221, 100%, 96%,0.2);
+    font-family: "Hanken Grotesk",sans-serif;
+    font-size: 1.8rem;
+   width: 100vw;
+   overflow: hidden;
+ 
+}
+
+.card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4rem;
+    background-color: var(--White);
+    border-bottom-right-radius: 4rem;
+    box-shadow: 0.5rem 2rem 4rem hsla(221, 100%, 96%,1);
+  
+    
+}
+@media only screen and (max-width:375px) {
+ .card_container{
+    display:flex;
+ margin-top: -10rem;
+ align-items: center;
+flex-direction: column;
+width:100%;
+ }     
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:100%;
+    width:100%
+   
+  
+}
+.result{
+
+    width:42rem;
+    border-radius:4rem ;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image:linear-gradient(to bottom,var(--Light-slate-blue-background),var(--background-Light-royal-blue));
+    padding:5rem 7.5rem;
+    /* align-self: stretch; */
+}
+@media only screen and (max-width:375px) {
+    .result{
+     height:100%;
+      width:48rem;
+      margin-top: 14rem;
+    }     
+   }
+
+.result_text{
+    color:var(--Light-lavender) ;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+}
+.result_circle{
+color:var(--White);
+border-radius: 50%;
+width:24rem;
+height: 24rem;
+background-image:linear-gradient(to top,var(--Persian-blue-circle),var(--Violet-blue-circle)) ;
+margin:1.2rem auto;
+padding:4rem;
+
+}
+.result_circle-mark{
+font-size: 9.5rem;
+font-weight: 800;
+
+}
+.result_circle-mark-of-100{
+    color:var(--Light-lavender) ;
+    font-weight: 800;
+
+}
+.footer-main{color: var(--White);
+    margin: 2rem 0;
+    font-size: 4rem;
+}
+.footer-details{
+    color:var(--Light-lavender) ;
+}
+.rows{
+    width: 42rem;
+    background-color: var(--White);
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5rem;
+   align-self: stretch;
+    border-bottom-right-radius: 4rem;
+  
+  
+}
+@media only screen and (max-width:375px) {
+    .rows{
+width: 48rem;
+    }     
+   }
+.rows-head{
+    text-align: left;
+    font-size:2.4rem;
+    font-weight: 700;
+}
+.rows-main{
+    margin:1.7rem 0;
+}
+.row{
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding:1.5rem;
+width:100%;
+margin:2.5rem 0;
+border-radius:1.1rem;
+}
+.row_start,.row_end{
+    display:flex;
+    align-items: center;
+    
+}
+.row_feature{
+   font-weight: 700;
+   padding-left: 1rem;
+}
+.row_feature-yellow{
+    color:hsla(39, 100%, 56%);
+}
+.row_feature-red{
+    color: hsla(0, 100%, 67%)
+}
+.row_feature-green{
+    color:hsla(166, 100%, 37%);
+    /* --Cobalt-blue: hsl(234, 85%, 45%); */
+ 
+}
+.row_feature-blue{
+    color:hsla(234, 85%, 45%)
+}
+.row-red{
+    background-color:hsla(0, 100%, 67%,0.08);
+}
+.row-green{
+    background-color: hsla(166, 100%, 37%,0.1);
+}
+.row-yellow{
+    background-color: hsla(39, 100%, 56%,0.1);
+    
+}
+.row-blue{
+    background-color:  hsl(234, 85%, 45%,0.05);
+}
+.row_mark{
+    color: var(--Dark-gray-blue);
+    font-weight: 800;
+  
+}
+
+span{display:inline-block;color: var(--Light-lavender);font-weight: 800;}
+.btn{
+    border:none;
+    background-color:var(--Dark-gray-blue);
+   color:var(--White);
+   width:100%;
+   padding:2rem 3rem;
+   border-radius: 10rem;
+   font-weight: 600;
+   font-size: 1.8rem;
+   cursor: pointer;
+}
+.btn:active{
+    background-image:linear-gradient(to bottom,var(--Light-slate-blue-background),var(--background-Light-royal-blue));
+}

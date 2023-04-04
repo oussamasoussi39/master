@@ -1,0 +1,23 @@
+ALGORITHM ALGO2SOLUTION1
+VAR
+tab1 , tab2 : ARRAY OF INTEGER;
+sum ,i,j,m,n:INTEGER;
+BEGIN
+sum:=0;
+Read (m);
+Read (n);
+FOR i FROM 0 TO m-1  STEP 1 DO 
+Read Tab1[i];
+FOR j FROM 0 TO n-1  STEP 1 DO 
+Read Tab2[j];
+
+FOR i FROM 0 TO m-1  STEP 1 DO
+     FOR j FROM 0 TO n-1  STEP 1 DO
+      IF (Tab1[i] = Tab2[j]) THEN
+       sum = sum +Tab1[i]*2
+       END_IF;
+        END_FOR;
+END_FOR;
+  
+ write (sum);
+END  
